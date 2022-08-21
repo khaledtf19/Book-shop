@@ -1,11 +1,11 @@
 import { Person } from "../../../interfaces";
 
-export interface BookImageProps {
+export interface BookImageColProps {
   imgUrl: string;
   name: string;
 }
 
-export interface BookTitleProps {
+export interface BookTitleColProps {
   title: string;
   authors: Person[];
 }

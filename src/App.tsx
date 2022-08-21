@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
-import Navbar from "./components/nav/navbar/Navbar";
-import Home from "./pages/home/Home";
+import { Navbar } from "./components/nav";
+import { BookPage, HomePage, SearchPage } from "./pages";
 
 function App() {
   return (
@@ -9,7 +9,10 @@ function App() {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/search/:search" element={<SearchPage />} />
+          <Route path="/book/:id" element={<BookPage />} />
+          <Route path="*" element={<div>Not Found</div>} />
         </Routes>
       </main>
     </div>

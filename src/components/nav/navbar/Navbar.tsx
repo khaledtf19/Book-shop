@@ -1,4 +1,4 @@
-import { Nav, NavItem, NavList } from "../navComponents/NavComponents";
+import { Nav, NavItem, NavList } from "../";
 
 const Navbar = () => {
   return (

@@ -1,5 +1,9 @@
 import { ReactNode } from "react";
 
+export interface BooksGridProps {
+  books: Book[];
+}
+
 export interface NavItemProps {
   link: string;
   name: string;
@@ -8,6 +12,13 @@ export interface NavItemProps {
 export interface BackDropProps {
   handleClick: Function;
   children: ReactNode;
+}
+
+export interface FetchBooksResult {
+  count: number;
+  next: string | null;
+  previous: string | null;
+  results: Book[];
 }
 
 export interface Person {
