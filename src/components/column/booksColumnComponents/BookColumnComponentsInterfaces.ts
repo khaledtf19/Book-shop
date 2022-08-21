@@ -6,6 +6,7 @@ export interface BookImageColProps {
 }
 
 export interface BookTitleColProps {
+  id: number;
   title: string;
   authors: Person[];
 }

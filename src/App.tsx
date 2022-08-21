@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import { Navbar } from "./components/nav";
-import { BookPage, HomePage, SearchPage } from "./pages";
+import { BookPage, HomePage, SearchPage, ViewPage } from "./pages";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/search/:search" element={<SearchPage />} />
+          <Route path="/view" element={<ViewPage />} />
           <Route path="/book/:id" element={<BookPage />} />
           <Route path="*" element={<div>Not Found</div>} />
         </Routes>
