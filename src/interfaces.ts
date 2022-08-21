@@ -1,5 +1,10 @@
 import { ReactNode } from "react";
 
+export interface ButtonProps {
+  children: ReactNode;
+  onClick: Function;
+}
+
 export interface BooksGridProps {
   books: Book[];
 }
@@ -7,11 +12,6 @@ export interface BooksGridProps {
 export interface NavItemProps {
   link: string;
   name: string;
-}
-
-export interface BackDropProps {
-  handleClick: Function;
-  children: ReactNode;
 }
 
 export interface FetchBooksResult {
